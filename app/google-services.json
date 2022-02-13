@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "568257447537",
+    "project_id": "finance-tracking-app-e9fb7",
+    "storage_bucket": "finance-tracking-app-e9fb7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:568257447537:android:016c870e80012ac3993dd0",
+        "android_client_info": {
+          "package_name": "com.example.e_wallet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "568257447537-3rvdqjqufn7bb3mrpmm5uh99d4gc6k1l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrUT9OL3_QuDhabhJDaHQ_Zd-6oc6Ymr4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "568257447537-3rvdqjqufn7bb3mrpmm5uh99d4gc6k1l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

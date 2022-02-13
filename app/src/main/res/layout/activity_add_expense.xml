@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen"
+    tools:context=".add_expense">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="343dp"
+        android:layout_marginTop="137dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.539">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="343dp"
+            android:layout_height="63dp"
+            android:layout_marginBottom="108dp"
+            android:background="@drawable/add_expenses_background"
+            android:drawableLeft="@drawable/calendar"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:gravity="center|left"
+            android:hint="Date"
+            android:inputType="textPersonName"
+            android:paddingLeft="12dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/category"
+            android:layout_width="343dp"
+            android:layout_height="63dp"
+            android:background="@drawable/add_expenses_background"
+            android:drawableLeft="@drawable/category"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Category"
+            android:inputType="textPersonName"
+            android:paddingLeft="12dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/earnings"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/earnings"
+            android:layout_width="343dp"
+            android:layout_height="63dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/add_expenses_background"
+            android:drawableLeft="@drawable/note_2"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Note"
+            android:inputType="textPersonName"
+            android:paddingLeft="12dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/save"
+        android:layout_width="297dp"
+        android:layout_height="56dp"
+        android:background="@drawable/rounded_layout"
+        android:gravity="center"
+        android:text="Save"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="354dp"
+        android:layout_height="178dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Expenses"
+            android:textColor="#706F6F"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/expense"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.474" />
+
+        <EditText
+            android:id="@+id/expense"
+            android:layout_width="295dp"
+            android:layout_height="82dp"
+
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/rounded_add_expenses"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="500"
+            android:inputType="number"
+            android:textSize="52sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

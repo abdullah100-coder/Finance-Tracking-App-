@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="455dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/screen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+        <TextView
+            android:id="@+id/log_out"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="112dp"
+            android:background="@drawable/rounded_textview"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:text="Log out"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/earnings"
+            android:layout_width="343dp"
+            android:layout_height="63dp"
+            android:background="@drawable/add_expenses_background"
+            android:drawableLeft="@drawable/ic_baseline_account_balance_wallet_24"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Earnings"
+            android:inputType="number"
+            android:paddingLeft="12dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/income"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.529"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.765" />
+
+        <TextView
+
+            android:id="@+id/myName"
+            android:layout_width="264dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="16dp"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:gravity="center|start"
+            android:paddingLeft="12dp"
+            android:text="Md. Abdullah Antor"
+            android:textColor="#4E4A4A"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+
+            android:id="@+id/textView18"
+            android:layout_width="94dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="36dp"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:gravity="center|start"
+            android:paddingLeft="12dp"
+            android:text="Name:"
+            android:textColor="#4E4A4A"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/myName"
+            app:layout_constraintHorizontal_bias="0.952"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/income"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/rounded_layout"
+            android:gravity="center"
+            android:text="Add Income"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/log_out"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="382dp"
+        android:layout_height="355dp"
+        android:layout_marginTop="16dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImage"
+            android:layout_width="189dp"
+            android:layout_height="199dp"
+            android:paddingBottom="15dp"
+            android:src="@drawable/my_image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView22"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+
+            android:id="@+id/textView22"
+            android:layout_width="269dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="28dp"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:gravity="center"
+            android:paddingLeft="12dp"
+            android:text="My Profile"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
